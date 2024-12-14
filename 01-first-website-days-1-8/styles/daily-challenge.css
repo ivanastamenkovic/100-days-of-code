@@ -1,0 +1,36 @@
+main {
+  width: 800px;
+  margin: 150px auto 50px auto;
+  padding: 24px;
+  background-color: rgb(218, 197, 181);
+  border: 5px solid rgb(34, 43, 50);
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px rgb(170, 96, 83, 0.8);
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: -129px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+span {
+  color: rgb(53, 72, 86);
+}
+
+#todays-challenge {
+  color: rgb(170, 96, 83);
+  font-weight: bold;
+  font-size: 42px;
+}
+
+a:hover {
+  color: rgb(193, 0, 87);
+  font-weight: bold;
+  text-decoration: none;
+}

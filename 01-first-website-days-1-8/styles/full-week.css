@@ -1,0 +1,51 @@
+header {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 48px;
+  color: rgb(34, 43, 50);
+  margin: 0;
+}
+
+a {
+  background-color: rgb(167, 1, 78);
+  color: white;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin: 0;
+  display: inline-block;
+  font-size: 24px;
+}
+
+a:hover {
+  background-color: rgb(193, 0, 87);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  width: 500px;
+  margin: 35px auto;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 5px 0;
+  background-color: rgb(218, 197, 181);
+  border-radius: 10px;
+}
+
+li:hover {
+  background-color: rgb(212, 189, 171);
+}
+
+h2 {
+  color: rgb(170, 96, 83);
+  font-family: "Oswald", sans-serif;
+}
+
+.highlight-goal {
+  border: 2px solid rgb(170, 96, 83);
+}
