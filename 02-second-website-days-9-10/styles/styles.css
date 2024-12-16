@@ -1,0 +1,88 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(243, 233, 255);
+}
+
+header {
+    text-align: center;
+    padding: 24px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 900;
+    color: rgb(119, 74, 216);
+}
+
+img {
+    width: 400px;
+}
+
+main {
+    background-color: rgb(119, 74, 216);
+    border-radius: 10px;
+    padding: 24px;
+    margin: 24px auto;
+    width: 700px;
+    color: rgb(249, 239, 245);
+}
+
+h2 {
+    font-weight: 900;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 12px 0;
+    padding-left: 12px;
+    border-left: 4px solid transparent;
+}
+
+.highlighted {
+    border-left: 4px solid rgb(249, 201, 39);
+    color: rgb(254, 240, 169);
+}
+
+a {
+    text-decoration: none;
+    background-color: rgb(254, 240, 169);
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: rgb(41, 10, 64);
+    font-weight: 700;
+}
+
+a:hover, a:active {
+    background-color: rgb(249, 201, 39);
+}
+
+footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer a {
+    text-decoration: none;
+    background-color: rgb(249, 201, 39);
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: rgb(97, 52, 0);
+    font-weight: 700;
+}
+
+footer a:hover, footer a:active {
+    border: 2px solid rgb(249, 201, 39);
+    background-color: rgb(254, 240, 169);
+}
+
+footer p {
+    color: rgb(153, 139, 166);
+    margin-top: 30px;
+}
