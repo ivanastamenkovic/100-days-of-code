@@ -1,0 +1,90 @@
+#hero {
+  height: 500px;
+  background-image: url("images/hero-img.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#hero-content {
+  width: 500px;
+  background-color: rgba(50, 50, 50, 0.5);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 0 30px;
+  margin: 0 auto;
+  position: relative;
+  top: 250px;
+}
+
+#hero-content h1 {
+  margin: 0;
+  color: rgb(237, 245, 253);
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+}
+
+#hero-content p {
+  color: rgb(237, 245, 253);
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+
+#hero-content a {
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 8px 16px;
+  background-color: rgb(255, 221, 0);
+  border-radius: 10px;
+}
+
+#hero-content a:hover {
+  background-color: rgba(255, 221, 0, 0.79);
+}
+
+#highlights {
+  padding: 12px;
+  background: linear-gradient(90deg, rgb(237, 245, 253), rgb(255, 255, 255));
+}
+
+#highlights h2 {
+  text-align: center;
+  margin: 60px auto 30px;
+  color: rgb(50, 50, 50);
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+#destinations {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.destination {
+  margin: 0 30px;
+}
+
+.destination img {
+  box-shadow: 2px 4px 8px rgb(0, 0, 0);
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.destination img:hover {
+  transform: scale(1.05);
+}
+
+.destination p {
+  text-align: center;
+  color: rgb(50, 50, 50);
+  font-size: 20px;
+}
+
+.destination strong {
+  color: rgb(0, 87, 183);
+}
