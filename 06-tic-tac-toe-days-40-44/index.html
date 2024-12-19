@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tic-Tac-Toe</h1>
+      <p>Are you ready to play Tic-Tac-Toe?</p>
+    </header>
+    <main>
+      <aside>
+        <h2>Enter your name:</h2>
+        <form>
+          <div class="form-control">
+            <label for="playername">Player name: </label>
+            <input type="text" name="player-name" id="playername" />
+          </div>
+          <div>
+            <button type="button">Cancel</button>
+            <button type="submit">Confirm</button>
+          </div>
+        </form>
+      </aside>
+
+      <section id="game-configuration">
+        <ol>
+          <li>
+            <article>
+              <h2>Player 1</h2>
+              <h3>Player Name</h3>
+              <p class="player-symbol">X</p>
+              <button>Enter player name</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h2>Player 2</h2>
+              <h3>Player Name</h3>
+              <p class="player-symbol">O</p>
+              <button>Enter player name</button>
+            </article>
+          </li>
+        </ol>
+        <button>Start New Game</button>
+      </section>
+      <section id="active-game">
+        <article id="game-over">
+          <h2>You won, <span id="winner-player-name">player name</span>!</h2>
+          <p>
+            <span id="loser-player-name">player name</span>, are you ready for a
+            rematch?
+          </p>
+          <p>Click the 'Start New Game' button above and play again.</p>
+        </article>
+        <p>It's your turn <span id="active-player-name">player name</span>!</p>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      <p>- built with HTML, CSS & JavaScript &#10084; made by Ivana -</p>
+    </footer>
+  </body>
+</html>
