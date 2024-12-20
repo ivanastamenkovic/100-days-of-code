@@ -1,6 +1,6 @@
 #config-overlay {
   text-align: center;
-  color: var(--pink-color-hover);
+  color: var(--pink-color-dark);
 }
 
 #config-overlay h2 {
@@ -13,7 +13,7 @@
 
 .form-control input {
   font: inherit;
-  border: 1px solid var(--pink-color-hover);
+  border: 1px solid var(--pink-color-dark);
   width: 15rem;
   margin: 0.5rem 0;
   padding: 0.25rem;
@@ -51,7 +51,7 @@
 #game-configuration h3 {
   font-size: 1.5rem;
   margin: 0.5rem 0 0.25rem;
-  color: var(--pink-color);
+  color: var(--pink-color-light);
 }
 
 .player-symbol {

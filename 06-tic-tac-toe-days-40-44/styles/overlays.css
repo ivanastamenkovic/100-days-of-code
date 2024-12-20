@@ -6,7 +6,7 @@
   background-color: var(--white-color);
   padding: 1rem;
   border-radius: 4px;
-  box-shadow: 0 2px 10px rgba(var(--pink-color-rgb), 0.3);
+  box-shadow: 0 2px 10px rgba(var(--pink-color-light-rgb), 0.3);
   display: none;
 }
 
