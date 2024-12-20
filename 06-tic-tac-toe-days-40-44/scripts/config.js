@@ -22,6 +22,7 @@ function savePlayerConfig(event) {
     event.target.firstElementChild.classList.add("error");
     errorsOutputElement.textContent =
       "Please enter a valid name - player name cannot be an empty string.";
+    errorsOutputElement.style.fontWeight = "bold";
     return;
   }
 

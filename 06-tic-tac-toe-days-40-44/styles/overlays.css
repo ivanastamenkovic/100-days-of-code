@@ -10,7 +10,7 @@
   display: none;
 }
 
-.modal#error-msg-overlay {
+#error-msg-no-name, #error-msg-same-name {
   top: 30%;
   color: var(--red-color-error);
   font-weight: bold;

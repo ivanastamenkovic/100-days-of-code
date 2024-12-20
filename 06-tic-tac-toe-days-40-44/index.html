@@ -42,9 +42,16 @@
         </form>
       </aside>
 
-      <aside class="modal" id="error-msg-overlay">
-        <p>Please set custom player names for both players!</p>
-        <button type="submit" class="btn" id="close-error-msg-btn">
+      <aside class="modal" id="error-msg-no-name">
+        <p>Please set custom player names for both players before starting the game!</p>
+        <button type="submit" class="btn close-error-msg-btn">
+          Confirm
+        </button>
+      </aside>
+
+      <aside class="modal" id="error-msg-same-name">
+        <p>Players cannot have the same name - please set another name(s)!</p>
+        <button type="submit" class="btn close-error-msg-btn">
           Confirm
         </button>
       </aside>
