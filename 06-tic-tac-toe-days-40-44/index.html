@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/overlays.css" />
+    <link rel="stylesheet" href="styles/configuration.css" />
   </head>
   <body>
     <header id="main-header">
@@ -18,7 +20,8 @@
       <p>Are you ready to play Tic-Tac-Toe?</p>
     </header>
     <main>
-      <aside>
+      <div id="backdrop"></div>
+      <aside class="modal" id="config-overlay">
         <h2>Enter your name:</h2>
         <form>
           <div class="form-control">
@@ -51,7 +54,7 @@
             </article>
           </li>
         </ol>
-        <button class="btn">Start New Game</button>
+        <button class="btn" id="start-game-btn">Start New Game</button>
       </section>
       <section id="active-game">
         <article id="game-over">

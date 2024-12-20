@@ -3,12 +3,13 @@
     --white-color-hover: rgb(250, 250, 250);
     --pink-color: palevioletred;
     --pink-color-hover: rgb(190, 70, 110);
+    --purple-color: rgb(90, 70, 90);
 }
 
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  color: rgb(90, 70, 90);
+  color: var(--purple-color);
   background-color: rgb(250, 240, 240);
 }
 
