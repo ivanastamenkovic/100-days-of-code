@@ -1,3 +1,24 @@
+function resetGameStatus() {
+  activePlayer = 0;
+  currentRound = 1;
+  gameIsOver = false;
+  winnerPlayerNameElement.textContent = "player name";
+  loserPlayerNameElement.textContent = "player name";
+  gameOverElement.style.display = "none";
+
+  let gameBoardIndex = 0;
+  for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+      gameData[i][j] = 0;
+      const gameBoardItemElement = gameBoardElement.children[gameBoardIndex];
+      gameBoardItemElement.textContent = "";
+      gameBoardItemElement.classList.remove("disabled-x");
+      gameBoardItemElement.classList.remove("disabled-o");
+      gameBoardIndex++;
+    }
+  }
+}
+
 function startNewGame() {
   if (players[0].name === "" || players[1].name === "") {
     errorMsgNoNameOverlayElement.style.display = "block";
@@ -8,11 +29,14 @@ function startNewGame() {
     errorMsgSameNameOverlayElement.style.display = "block";
     backdropElement.style.display = "block";
     document.body.classList.add("no-scroll");
-  } else {
-    activePlayerNameElement.textContent = players[activePlayer].name;
-    gameAreaElement.style.display = "block";
-    gameAreaElement.scrollIntoView({ behavior: "smooth" });
+    return;
   }
+
+  resetGameStatus();
+
+  activePlayerNameElement.textContent = players[activePlayer].name;
+  gameAreaElement.style.display = "block";
+  gameAreaElement.scrollIntoView({ behavior: "smooth" });
 }
 
 function closeErrorMsgOverlay() {
@@ -34,6 +58,10 @@ function switchPlayer() {
 }
 
 function selectGameField(event) {
+  if (gameIsOver) {
+    return;
+  }
+
   const selectedField = event.target;
   const selectedRow = selectedField.dataset.row - 1;
   const selectedColumn = selectedField.dataset.col - 1;
@@ -114,12 +142,14 @@ function checkForGameOver() {
 }
 
 function endGame(winnerId) {
+  gameIsOver = true;
   gameOverElement.style.display = "block";
   if (winnerId > 0) {
     const winnerName = players[winnerId - 1].name;
     winnerPlayerNameElement.textContent = winnerName;
   } else {
-    gameOverElement.textContent = "It is a draw! Are you ready for a new game?";
+    gameOverElement.innerHTML =
+      "It's a draw! Are you ready for a new game?<br><br>Click the 'Start New Game' button above and play again.";
   }
 }
 
