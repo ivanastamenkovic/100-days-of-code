@@ -7,5 +7,6 @@ The project will not only follow along with the course code but will also includ
 
 Below is a list of all the custom features and modifications I have implemented so far:
 - Replaced `alert()` with a custom modal (added to `startNewGame()`) and created `closeErrorMsgOverlay()` to close it.
+- Implemented smooth scroll to game area when "Start Game" is clicked, using `scrollIntoView()`.
 
 The game is still in progress, but sonn you'll be able to see it. Stay tuned for updates!

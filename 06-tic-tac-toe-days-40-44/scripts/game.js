@@ -6,6 +6,7 @@ function startNewGame() {
   }
 
   gameAreaElement.style.display = "block";
+  gameAreaElement.scrollIntoView({ behavior: 'smooth' });
 }
 
 function closeErrorMsgOverlay() {
