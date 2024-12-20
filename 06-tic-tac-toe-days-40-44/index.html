@@ -43,14 +43,20 @@
       </aside>
 
       <aside class="modal" id="error-msg-no-name">
-        <p>Please set custom player names for both players before starting the game!</p>
-        <button type="submit" class="btn close-error-msg-btn">
-          Confirm
-        </button>
+        <p>
+          Please set custom player names for both players before starting the
+          game!
+        </p>
+        <button type="submit" class="btn close-error-msg-btn">Confirm</button>
       </aside>
 
       <aside class="modal" id="error-msg-same-name">
         <p>Players cannot have the same name - please set another name(s)!</p>
+        <button type="submit" class="btn close-error-msg-btn">Confirm</button>
+      </aside>
+
+      <aside class="modal" id="error-msg-double-selection">
+        <p>Please select a field that hasn't already been selected!</p>
         <button type="submit" class="btn close-error-msg-btn">
           Confirm
         </button>
@@ -100,17 +106,17 @@
         </article>
         <p>It's your turn <span id="active-player-name">player name</span>!</p>
         <ol id="game-board">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li data-col="1" data-row="1"></li>
+          <li data-col="2" data-row="1"></li>
+          <li data-col="3" data-row="1"></li>
 
-          <li></li>
-          <li></li>
-          <li></li>
+          <li data-col="1" data-row="2"></li>
+          <li data-col="2" data-row="2"></li>
+          <li data-col="3" data-row="2"></li>
 
-          <li></li>
-          <li></li>
-          <li></li>
+          <li data-col="1" data-row="3"></li>
+          <li data-col="2" data-row="3"></li>
+          <li data-col="3" data-row="3"></li>
         </ol>
       </section>
     </main>

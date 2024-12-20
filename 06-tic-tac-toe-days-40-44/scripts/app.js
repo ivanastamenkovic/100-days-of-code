@@ -1,3 +1,9 @@
+const gameData = [
+  [0, 0, 0],
+  [0, 0, 0],
+  [0, 0, 0],
+];
+
 let editedPlayer = 0;
 let activePlayer = 0;
 
@@ -21,6 +27,9 @@ const errorMsgNoNameOverlayElement =
   document.getElementById("error-msg-no-name");
 const errorMsgSameNameOverlayElement = document.getElementById(
   "error-msg-same-name"
+);
+const errorMsgDoubleSelectionElement = document.getElementById(
+  "error-msg-double-selection"
 );
 const gameAreaElement = document.getElementById("active-game");
 const activePlayerNameElement = document.getElementById("active-player-name");

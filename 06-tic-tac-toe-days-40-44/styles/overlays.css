@@ -10,7 +10,7 @@
   display: none;
 }
 
-#error-msg-no-name, #error-msg-same-name {
+#error-msg-no-name, #error-msg-same-name, #error-msg-double-selection {
   top: 30%;
   color: var(--red-color-error);
   font-weight: bold;

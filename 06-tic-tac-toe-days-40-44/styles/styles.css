@@ -1,11 +1,11 @@
 :root {
-    --white-color: rgb(255, 255, 255);
-    --white-color-hover: rgb(250, 250, 250);
-    --pink-color-light: palevioletred;
-    --pink-color-dark: rgb(190, 70, 110);
-    --pink-color-darker: rgb(170, 90, 120);
-    --purple-color: rgb(90, 70, 90);
-    --red-color-error: rgb(215, 0, 60);
+  --white-color: rgb(255, 255, 255);
+  --white-color-hover: rgb(250, 250, 250);
+  --pink-color-light: palevioletred;
+  --pink-color-dark: rgb(190, 70, 110);
+  --pink-color-darker: rgb(170, 90, 120);
+  --purple-color: rgb(90, 70, 90);
+  --red-color-error: rgb(215, 0, 60);
 }
 
 body {
@@ -13,6 +13,10 @@ body {
   font-family: "Open Sans", sans-serif;
   color: var(--purple-color);
   background-color: rgb(250, 240, 240);
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 #main-header {

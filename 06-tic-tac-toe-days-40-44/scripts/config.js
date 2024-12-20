@@ -3,6 +3,7 @@ function openPlayerConfig(event) {
   playerConfigOverlayElement.style.display = "block";
   backdropElement.style.display = "block";
   inputPlayerNameElement.focus();
+  document.body.classList.add("no-scroll");
 }
 
 function closePlayerConfig() {
@@ -11,6 +12,7 @@ function closePlayerConfig() {
   formElement.firstElementChild.classList.remove("error");
   errorsOutputElement.textContent = "";
   formElement.firstElementChild.lastElementChild.value = "";
+  document.body.classList.remove("no-scroll");
 }
 
 function savePlayerConfig(event) {
