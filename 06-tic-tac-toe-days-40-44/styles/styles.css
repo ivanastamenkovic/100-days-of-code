@@ -5,6 +5,7 @@
     --pink-color-dark: rgb(190, 70, 110);
     --pink-color-darker: rgb(170, 90, 120);
     --purple-color: rgb(90, 70, 90);
+    --red-color-error: rgb(215, 0, 60);
 }
 
 body {
