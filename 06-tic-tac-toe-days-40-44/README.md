@@ -1,5 +1,11 @@
 # Tic-Tac-Toe Game (Days 40-44)
 
-This is another project done during the course **100 Days of Code**. The game is still in progress, and the basic HTML structure has been set up.
+This is another project done during the course **100 Days of Code**.
+The project will not only follow along with the course code but will also include some of my own custom features and improvements. 
 
-In the upcoming days, I will continue adding features and styling to complete the project. This project will not only follow along with the course code but will also include some of my own custom features and improvements. Stay tuned for updates!
+### Custom Features and Modifications (so far)
+
+Below is a list of all the custom features and modifications I have implemented so far:
+- Replaced `alert()` with a custom modal (added to `startNewGame()`) and created `closeErrorMsgOverlay()` to close it.
+
+The game is still in progress, but sonn you'll be able to see it. Stay tuned for updates!

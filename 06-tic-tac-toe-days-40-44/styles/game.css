@@ -1,7 +1,7 @@
 #active-game {
   text-align: center;
   margin: 2rem 0 5rem;
-  /* display: none; */
+  display: none;
 }
 
 #game-over {
@@ -13,7 +13,7 @@
   border-radius: 4px;
   box-shadow: 0 1px 5px rgba(var(--purple-color), 0.3);
   color: var(--white-color);
-  /* display: none; */
+  display: none;
 }
 
 #game-over h2 {

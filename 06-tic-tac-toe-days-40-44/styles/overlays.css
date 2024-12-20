@@ -10,6 +10,13 @@
   display: none;
 }
 
+.modal#error-msg-overlay {
+  top: 30%;
+  color: var(--red-color-error);
+  font-weight: bold;
+  text-align: center;
+}
+
 #backdrop {
   position: fixed;
   top: 0;
