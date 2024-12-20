@@ -56,6 +56,12 @@ function selectGameField(event) {
   gameData[selectedRow][selectedColumn] = activePlayer + 1;
   const winnerId = checkForGameOver();
 
+  if (winnerId !== 0) {
+    endGame(winnerId);
+    const loserName = getLoserName(winnerId);
+    loserPlayerNameElement.textContent = loserName;
+  }
+
   currentRound++;
   switchPlayer();
 }
@@ -105,4 +111,24 @@ function checkForGameOver() {
   }
 
   return 0;
+}
+
+function endGame(winnerId) {
+  gameOverElement.style.display = "block";
+  if (winnerId > 0) {
+    const winnerName = players[winnerId - 1].name;
+    winnerPlayerNameElement.textContent = winnerName;
+  } else {
+    gameOverElement.textContent = "It is a draw! Are you ready for a new game?";
+  }
+}
+
+function getLoserName(winnerId) {
+  if (winnerId === 1) {
+    return players[1].name;
+  } else if (winnerId === 2) {
+    return players[0].name;
+  } else {
+    return null;
+  }
 }

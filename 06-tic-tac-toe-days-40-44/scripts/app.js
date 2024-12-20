@@ -34,6 +34,9 @@ const errorMsgDoubleSelectionElement = document.getElementById(
 );
 const gameAreaElement = document.getElementById("active-game");
 const activePlayerNameElement = document.getElementById("active-player-name");
+const gameOverElement = document.getElementById("game-over");
+const winnerPlayerNameElement = document.getElementById("winner-player-name");
+const loserPlayerNameElement = document.getElementById("loser-player-name");
 
 const editPlayer1BtnElement = document.getElementById("edit-player-1-btn");
 const editPlayer2BtnElement = document.getElementById("edit-player-2-btn");
@@ -42,6 +45,7 @@ const startNewGameBtnElement = document.getElementById("start-game-btn");
 const closeErrorMsgBtnElements = document.getElementsByClassName(
   "close-error-msg-btn"
 );
+
 const gameFieldElements = document.querySelectorAll("#game-board li");
 
 editPlayer1BtnElement.addEventListener("click", openPlayerConfig);

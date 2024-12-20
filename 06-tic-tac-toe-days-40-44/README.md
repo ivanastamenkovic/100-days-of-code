@@ -11,5 +11,6 @@ Below is a list of all the custom features and modifications I have implemented 
 - Implemented smooth scroll to game area when "Start Game" is clicked, using `scrollIntoView()`.
 - Updated `disabled` class to change field colors based on which player selected the field ("X" or "O").
 - Added functionality to prevent page scrolling when a modal is open by adding a `no-scroll` class to the `<body>` element.
+- Implemented `getLoserName()` to display the loser's name in the endgame message.
 
 The game is still in progress, but sonn you'll be able to see it. Stay tuned for updates!
