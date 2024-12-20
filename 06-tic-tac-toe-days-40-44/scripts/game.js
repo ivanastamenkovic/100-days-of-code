@@ -144,9 +144,16 @@ function checkForGameOver() {
 function endGame(winnerId) {
   gameIsOver = true;
   gameOverElement.style.display = "block";
+
   if (winnerId > 0) {
     const winnerName = players[winnerId - 1].name;
-    winnerPlayerNameElement.textContent = winnerName;
+    const loserName = getLoserName(winnerId);
+    
+    gameOverElement.innerHTML = `
+    <h2>You won, <span id="winner-player-name">${winnerName}</span>!</h2>
+    <p><span id="loser-player-name">${loserName}</span>, are you ready for a rematch?</p>
+    <p>Click the 'Start New Game' button above and play again.</p>
+  `;
   } else {
     gameOverElement.innerHTML =
       "It's a draw! Are you ready for a new game?<br><br>Click the 'Start New Game' button above and play again.";
